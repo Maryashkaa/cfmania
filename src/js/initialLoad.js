@@ -1,8 +1,8 @@
 import IconCfm from '../img/cfmm.jpg'
 
 function initialLoad() {
-    const content = document.getElementById('content');
-
+    const content = document.createElement('root');
+    content.id = 'root';
     const mainText = document.createElement('div');
     mainText.classList.add('main-text');
 
@@ -39,6 +39,7 @@ function initialLoad() {
     content.appendChild(mainText);
     content.appendChild(mainBlock);
     content.appendChild(img);
+    return content
 }
 
 export default initialLoad;
