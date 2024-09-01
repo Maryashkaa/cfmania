@@ -1,6 +1,10 @@
 import "../index.html";
-import "../css/style.css";
+import "../menuPage";
+import "../index.js";
 
-import initialLoad from './initialLoad';
+
+
+
+import initialLoad from '';
 document.body.appendChild(initialLoad());
 //document.addEventListener('DOMContentLoaded', initialLoad);

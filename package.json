@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack --progress --config webpack/webpack.prod.js",
     "dev": "webpack serve --open --config webpack/webpack.dev.js --hot",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "license": "MIT",
@@ -23,6 +23,7 @@
     "webpack-dev-server": "^5.0.2"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.6.0"
   }
 }
