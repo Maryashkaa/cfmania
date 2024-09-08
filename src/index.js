@@ -1,20 +1,28 @@
+// Добавляем элемент с id 'root' в body, если он отсутствует
+if (!document.getElementById('root')) {
+    const rootDiv = document.createElement('div');
+    rootDiv.id = 'root';
+    document.body.appendChild(rootDiv);
+}
+
 // Импортируем функции из других файлов
-import initialLoad from './initialLoad';
-import loadMenuPage from './menuPage';
-import loadContactPage from './contactPage';
+import initialLoad from './js/initialLoad';
+import loadMenuPage from './js/menuPage';
+import loadContactPage from './js/contactPage';
+import './css/style.css'
 
 // Функция для очистки содержимого перед загрузкой новой страницы
 function clearContent() {
     const content = document.getElementById('root');
     if (content) {
-        content.remove();
+        content.innerHTML = '';  // Очищаем содержимое вместо удаления
     }
 }
 
 // Функция для переключения между страницами
 function switchToPage(pageLoadFunction) {
     clearContent();
-    const root = document.getElementById('content');
+    const root = document.getElementById('root');
     root.appendChild(pageLoadFunction());
 }
 
@@ -42,10 +50,11 @@ function createNavBar() {
 
 // Функция для начальной загрузки страницы
 function initialPageLoad() {
-    const root = document.getElementById('content');
+    const root = document.getElementById('root');
     root.appendChild(createNavBar());
     root.appendChild(initialLoad());
 }
 
 // Запускаем начальную загрузку
 initialPageLoad();
+ 

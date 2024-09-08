@@ -17,11 +17,14 @@ html {
 .main-text h1 {
   font-size: 40px;
   font-weight: bold;
-  color: #3e2723;
-  margin: 0;
+  color:  #f0c89d;
+  margin: 10px;
   line-height: 0.9;
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  top: -95px;
+  left: 0;
+ 
 }
 
 .main-text .byM {
@@ -29,16 +32,22 @@ html {
   font-weight: normal;
   color: #e720a8;
   position: absolute;
-  top: 28px;
-  left: 4;
+  left: 45px;
+  top: 45px;
   z-index: 1;
   font-family: "Dancing Script", cursive;
   opacity: 0.8;
-  margin-left: 50px;
+
 }
 
+.main-text{
+ 
+  padding: 20px;
+}
+
+
 .main-block {
-  margin: 80px;
+  margin: 20px;
   background-color: #3e2723;
   border-radius: 20px;
   padding: 20px;
@@ -56,7 +65,8 @@ html {
   margin: 10px 30px;
   text-align: center;
   line-height: 1.5;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .lala {
@@ -66,13 +76,7 @@ html {
   margin-top: -50px;
 }
 
-.lala img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: auto;
-}
+
 
 .cont-m {
   margin: 80px;
@@ -98,6 +102,76 @@ html {
   display: flex;
   justify-content: end;
  margin-right: 50px;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+ padding: 10px 0;
+ background-color: #3e2723;
  
 
+}
+
+nav button{
+  cursor: pointer;
+  background-color: #dfd3c6;
+  font-size: 30px;
+  border-radius: 18px;
+  margin: 0 10px;
+  transition: background-color 0.5s ease;
+  padding: 20px;
+}
+
+nav button:hover{
+  background-color: rgb(208, 157, 117);
+}
+
+.menu-item{
+  color: #3e2723;
+  margin: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+ 
+}
+
+.menu-item:hover{
+  background-color: rgb(208, 157, 117);
+}
+
+.menu-title{
+  margin: 20px;
+}
+
+.contact-title{
+  margin: 20px;
+}
+
+.contact-info{
+  color: #3e2723;
+  margin: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+.home-button{
+  cursor: pointer;
+  background-color: #dfd3c6;
+  font-size: 30px;
+  border-radius: 18px;
+  margin: 10px;
+  transition: background-color 0.5s ease;
+  padding: 20px;
+}
+.home-button:hover{
+  background-color: rgb(208, 157, 117);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }
