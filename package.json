@@ -5,8 +5,8 @@
   "scripts": {
     "build": "webpack --progress --config webpack/webpack.prod.js",
     "dev": "webpack serve --open --config webpack/webpack.dev.js --hot",
-    "deploy": "gh-pages -d dist"
-
+    "deploy": "gh-pages -d dist",
+"start": "webpack serve --open"
   },
   "keywords": [],
   "license": "MIT",

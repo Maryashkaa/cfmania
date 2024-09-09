@@ -1,5 +1,5 @@
 import initialLoad from "./initialLoad";
-
+import {switchToPage} from '../index'
 
 function loadContactPage() {
     const content = document.createElement('div');
@@ -25,8 +25,7 @@ function loadContactPage() {
 
     
     homeButton.addEventListener('click', () => {
-        document.body.innerHTML = ''; 
-        document.body.appendChild(initialLoad()); 
+        switchToPage(initialLoad);
     });
 
    

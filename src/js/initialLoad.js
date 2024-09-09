@@ -1,8 +1,10 @@
 import IconCfm from '../img/cfmm.jpg'
+import { createNavBar } from '..';
+
 
 function initialLoad() {
     const content = document.createElement('root');
-    content.id = 'root';
+    content.id = 'root'
     const mainText = document.createElement('div');
     mainText.classList.add('main-text');
 
@@ -35,6 +37,7 @@ function initialLoad() {
     img.width = 1500;
     img.height = 500;
 
+    content.appendChild(createNavBar());
     content.appendChild(mainText);
     content.appendChild(mainBlock);
     content.appendChild(img);

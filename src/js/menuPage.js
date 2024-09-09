@@ -1,4 +1,5 @@
 import initialLoad from "./initialLoad";
+import {switchToPage} from '../index'
 
 function loadMenuPage() {
     const content = document.createElement('div');
@@ -13,9 +14,8 @@ function loadMenuPage() {
 homeButton.textContent = 'Home'; 
 homeButton.classList.add ('home-button');
 
-homeButton.addEventListener('click',()=> {
-    document.body.innerHTML = '';
-    document.body.appendChild(initialLoad());
+homeButton.addEventListener('click', () => {
+    switchToPage(initialLoad);
 });
 
 content.appendChild(homeButton);

@@ -20,14 +20,14 @@ function clearContent() {
 }
 
 // Функция для переключения между страницами
-function switchToPage(pageLoadFunction) {
+export function switchToPage(pageLoadFunction) {
     clearContent();
     const root = document.getElementById('root');
     root.appendChild(pageLoadFunction());
 }
 
 // Создаем навигационную панель
-function createNavBar() {
+export function createNavBar() {
     const navBar = document.createElement('nav');
     const homeLink = document.createElement('button');
     homeLink.textContent = 'Home';
@@ -49,9 +49,8 @@ function createNavBar() {
 }
 
 // Функция для начальной загрузки страницы
-function initialPageLoad() {
+export function initialPageLoad() {
     const root = document.getElementById('root');
-    root.appendChild(createNavBar());
     root.appendChild(initialLoad());
 }
 
