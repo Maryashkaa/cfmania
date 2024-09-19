@@ -4,7 +4,7 @@ import {switchToPage} from '../index'
 function loadContactPage() {
     const content = document.createElement('div');
     content.id = 'contact-page';
-
+//category
     const contactTitle = document.createElement('h1');
     contactTitle.textContent = 'Contact Us';
     contactTitle.classList.add('contact-title');
