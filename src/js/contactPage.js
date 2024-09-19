@@ -16,7 +16,7 @@ function loadContactPage() {
         <p>Email: info@coffeemania.ru</p>
         <p>Address: Putitna 22 </p>
     `;
-
+// cart
     content.appendChild(contactTitle);
     content.appendChild(contactInfo);
     const homeButton = document.createElement('button');
